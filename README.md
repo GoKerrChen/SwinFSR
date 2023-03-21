@@ -39,17 +39,18 @@ data
 ```
 
 ## 2. Begin to train
-Run  ```python train.py ``` to perform training. The checkpoint will be saved to ./log/
+Run  ```python train.py ``` with customed ```model_path``` for pretrain to perform training. The checkpoint will be saved to ```./log/```
 
 # Test
 ## 1. Prepare test data 
-Download the test sets from NTIRE 2023 Stereo Image Super Resolution Challenge and unzip them to  ``` ./data/NTIRE2023Test  ```
+Download the test sets from NTIRE 2023 Stereo Image Super Resolution Challenge and unzip them to  ```./data/NTIRE2023Test ```
 
 ## 2. Begin to test
-Run  ```python inference.py  ``` to perform inference.
+Run  ```python inference.py ``` to perform inference with pretrained model downloaded in ```./pretrained_model``` folder. Customed ```model_path``` args required to set to ```./pretrained_model``` for pretrain
 
 ## Module Mean:
-Run  ```python mean_model_weight.py  ```
+Run  ```python mean_model_weight.py ```
+
 ## Model Ensemble:
 Run  ``` python inference_ensemble.py ```
 
