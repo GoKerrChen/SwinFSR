@@ -54,4 +54,4 @@ Run  ``` python inference_ensemble.py ```
 We share the results achieved by our SwinFSR on NTIRE 2023 Stereo Image Super Resolution test sets for 4xSR. The final submission results are available on Google Drive: https://drive.google.com/file/d/10fWVV2HFl6GBJQs0BSYHRXZfXydPQXam/view?usp=sharing
 The result are coming from ensembling the inference results of top 3 models   (perceptual_loss, slowftcam, scam). 
 These models and inferences results can be download here: https://drive.google.com/drive/folders/10N-ctXAUbJ4bfQJZmMJDSSa9odL3fj_S?usp=sharing. 
-Download these 3 inference results in ./results folder and run inference_ensemble.py to get the final results in ./results_final folder.
+Download these 3 inference results in  ```./results  ``` folder and run inference_ensemble.py to get the final results in  ``` ./results_final  ```folder.
