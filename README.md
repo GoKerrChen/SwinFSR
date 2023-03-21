@@ -5,6 +5,7 @@ PyTorch1.13.1，torchvision0.14.1. The code is tested with python=3.9.16 and cud
 
 # Train
 ## 1. Prepare training data 
+
 ├── NTIRE2023Test
 │   └── LR_x4_2
 │       ├── 0001_L.png
@@ -35,7 +36,7 @@ PyTorch1.13.1，torchvision0.14.1. The code is tested with python=3.9.16 and cud
         └── 0002_R.png
         
 ## 2. Begin to train
-Run train.py to perform training. The checkpoint will be saved to ./log/
+Run  ```python train.py ``` to perform training. The checkpoint will be saved to ./log/
 
 # Test
 ## 1. Prepare test data 
