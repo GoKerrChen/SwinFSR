@@ -6,6 +6,8 @@
 # Train
 ## 1. Prepare training data 
 
+```
+data
 ├── NTIRE2023Test
 │   └── LR_x4_2
 │       ├── 0001_L.png
@@ -34,7 +36,8 @@
         ├── 0001_R.png
         ├── 0002_L.png
         └── 0002_R.png
-        
+```
+
 ## 2. Begin to train
 Run  ```python train.py ``` to perform training. The checkpoint will be saved to ./log/
 
