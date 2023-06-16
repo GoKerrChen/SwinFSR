@@ -7,7 +7,7 @@
 ## 1. Prepare training data 
 
 ```
-data
+dataset
 ├── NTIRE2023Test
 │   └── LR_x4_2
 │       ├── 0001_L.png
@@ -38,12 +38,14 @@ data
         └── 0002_R.png
 ```
 
+Create following folders  ```log, mean_model, pretrained_model, results, results_final, Tensorboard```
+
 ## 2. Begin to train
 Run  ```python train.py ``` with customed ```model_path``` for pretrain to perform training. The checkpoint will be saved to ```./log/```
 
 # Test
 ## 1. Prepare test data 
-Download the test sets from NTIRE 2023 Stereo Image Super Resolution Challenge and unzip them to  ```./data/NTIRE2023Test ```
+Download the test sets from NTIRE 2023 Stereo Image Super Resolution Challenge and unzip them to  ```./dataset/NTIRE2023Test ```
 
 ## 2. Begin to test
 Run  ```python inference.py ``` to perform inference with pretrained model downloaded in ```./pretrained_model``` folder. Customed ```model_path``` args required to set to ```./pretrained_model``` for pretrain. ```swin_cam_ffc.py``` is used for perceptual_loss and slowftcam and ```swin_scam_ffc.py``` is used for scam.
